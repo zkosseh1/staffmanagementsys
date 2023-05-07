@@ -12,7 +12,7 @@ public class RemoveEmployee extends JFrame implements ActionListener {
     JButton deletDis, returnHome;
 
     RemoveEmployee() {
-        getContentPane().setBackground(new Color(0, 33, 72));
+        getContentPane().setBackground(new Color(78, 5, 130));
         setLayout(null);
 
         JLabel labelEmpID = new JLabel("Employee ID");

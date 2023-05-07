@@ -30,7 +30,7 @@ public class FileAComplaint extends JFrame implements ActionListener {
     JTextArea detailsFromComplaint, causeOfComplaint;
     JComboBox CategoryOfComplaint;
     FileAComplaint(){
-        getContentPane().setBackground(new Color(0, 33, 72));
+        getContentPane().setBackground(new Color(78, 5, 130));
         setLayout(null);
         ////////////////////////////headers/////////////////////////
         JLabel header = new JLabel("File a Complaint");
@@ -83,7 +83,7 @@ public class FileAComplaint extends JFrame implements ActionListener {
         ////////////meeting ID generator section////////////
         JLabel meetingIDlabel = new JLabel("Complaint ID Number");
         meetingIDlabel.setForeground(Color.WHITE);
-        meetingIDlabel.setBounds(50, 170, 150, 30);
+        meetingIDlabel.setBounds(50, 170, 200, 30);
         meetingIDlabel.setFont(new Font("Century Gothic", Font.PLAIN, 14));
         add(meetingIDlabel);
 

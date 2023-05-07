@@ -5,49 +5,51 @@ import java.awt.event.ActionListener;
 
 public class Home extends JFrame implements ActionListener {
 
-    JButton view, add, update, delete, meeting, signOutButton, fileAComplaintButton;
+    JButton view, add, update, delete, meeting, signOutButton, fileAComplaintButton, bookAHoliday, videoTraining;
 
     Home() {
 
         setLayout(null);
 
-        ImageIcon badge = new ImageIcon(ClassLoader.getSystemResource("Media/home.jpg"));
-        Image badge2 = badge.getImage().getScaledInstance(1120,630,Image.SCALE_DEFAULT);
-        ImageIcon im3 = new ImageIcon(badge2);
-        JLabel image = new JLabel(im3);
-        image.setBounds(0,0,1120,630);
-        add(image);
+        getContentPane().setBackground(new Color(78, 5, 130));
+        setLayout(null);
 
         JLabel heading = new JLabel("Welcome Back");
         heading.setBounds(450, 22, 400, 40);
         heading.setFont(new Font("Century Gothic", Font.BOLD, 25));
         heading.setForeground(Color.WHITE);
-        image.add(heading);
+        add(heading);
+
+        JLabel Netlabs = new JLabel("Developed by NETLABS ©");
+        Netlabs.setBounds(650, 500, 400, 40);
+        Netlabs.setFont(new Font("Century Gothic",Font.PLAIN, 20));
+        Netlabs.setForeground(Color.WHITE);
+        add(Netlabs);
 
         add = new JButton("Add Employee");
         add.setBounds(450,80,150,40);
         add.addActionListener(this);
-        image.add(add);
+        add(add);
 
         view = new JButton("View Employees");
         view.setBounds(650,80,150,40);
         view.addActionListener(this);
-        image.add(view);
+        add(view);
 
         update = new JButton("Update Employee");
         update.setBounds(450,140,150,40);
         update.addActionListener(this);
-        image.add(update);
+        add(update);
 
         delete = new JButton("Delete Employee");
         delete.setBounds(650,140,150,40);
         delete.addActionListener(this);
-        image.add(delete);
+        add(delete);
 
         meeting = new JButton("Schedule Meeting");
         meeting.setBounds(650,190,150,40);
         meeting.addActionListener(this);
-        image.add(meeting);
+        add(meeting);
 
         signOutButton = new JButton("Sign Out");
         signOutButton.setBounds(150,500,100,40);
@@ -59,7 +61,17 @@ public class Home extends JFrame implements ActionListener {
         fileAComplaintButton.addActionListener(this);
         add(fileAComplaintButton);
 
-        setSize(1120, 630);
+        bookAHoliday = new JButton("Book a Holiday");
+        bookAHoliday.setBounds(450,250,150,40);
+        bookAHoliday.addActionListener(this);
+        add(bookAHoliday);
+
+        videoTraining = new JButton("Video Training");
+        videoTraining.setBounds(650,250,150,40);
+        videoTraining.addActionListener(this);
+        add(videoTraining);
+
+        setSize(1100, 630);
         setVisible(true);
     }
 
@@ -85,6 +97,12 @@ public class Home extends JFrame implements ActionListener {
         } else if (ae.getSource() == delete) {
             setVisible(false);
             new RemoveEmployee();
+        } else if (ae.getSource() == bookAHoliday) {
+            setVisible(false);
+            new HolidayBooking();
+        } else if (ae.getSource() == videoTraining) {
+            setVisible(false);
+            new VideoTraining();
     } else {
 
         }

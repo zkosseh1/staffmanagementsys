@@ -25,7 +25,7 @@ public class ScheduleMeeting extends JFrame implements ActionListener {
     JLabel meetingIDfield;
     ScheduleMeeting(){
 
-        getContentPane().setBackground(new Color(0, 33, 72));
+        getContentPane().setBackground(new Color(78, 5, 130));
         setLayout(null);
         JLabel header = new JLabel("Schedule a Meeting");
         header.setFont(new Font("Century Gothic", Font.PLAIN, 25));

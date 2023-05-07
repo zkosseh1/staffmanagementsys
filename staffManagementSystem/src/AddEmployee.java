@@ -18,10 +18,10 @@ public class AddEmployee extends JFrame implements ActionListener {
     JButton add, back;
 
     AddEmployee() {
-        getContentPane().setBackground(new Color(98, 121, 148));
+        getContentPane().setBackground(new Color(78, 5, 130));
         setLayout(null);
         JLabel header = new JLabel("Add New Employee Details");
-        header.setFont(new Font("consolas", Font.BOLD, 25));
+        header.setFont(new Font("Century Gothic", Font.BOLD, 25));
         header.setForeground(Color.WHITE);
         header.setBounds(320, 30, 480, 50);
         add(header);
@@ -29,7 +29,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel namefield = new JLabel("Name");
         namefield.setForeground(Color.WHITE);
         namefield.setBounds(50, 150, 150, 30);
-        namefield.setFont(new Font("consolas", Font.PLAIN, 20));
+        namefield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(namefield);
 
         nametextfield = new JTextField();
@@ -39,7 +39,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel surnamefield = new JLabel("Surname");
         surnamefield.setForeground(Color.WHITE);
         surnamefield.setBounds(400, 150, 150, 30);
-        surnamefield.setFont(new Font("consolas", Font.PLAIN, 20));
+        surnamefield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(surnamefield);
 
         surnametextfield = new JTextField();
@@ -49,7 +49,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel dobfield = new JLabel("Date of Birth");
         dobfield.setForeground(Color.WHITE);
         dobfield.setBounds(50, 200, 150, 30);
-        dobfield.setFont(new Font("consolas", Font.PLAIN, 20));
+        dobfield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(dobfield);
 
         dobselector = new JDateChooser();
@@ -59,7 +59,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel salaryfield = new JLabel("Salary");
         salaryfield.setForeground(Color.WHITE);
         salaryfield.setBounds(400, 200, 150, 30);
-        salaryfield.setFont(new Font("consolas", Font.PLAIN, 20));
+        salaryfield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(salaryfield);
 
         saltextfield = new JTextField();
@@ -69,7 +69,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel addressfield = new JLabel("Address");
         addressfield.setForeground(Color.WHITE);
         addressfield.setBounds(50, 250, 150, 30);
-        addressfield.setFont(new Font("consolas", Font.PLAIN, 20));
+        addressfield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(addressfield);
 
         addrtextfield = new JTextField();
@@ -79,7 +79,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel telefield = new JLabel("Phone No.");
         telefield.setForeground(Color.WHITE);
         telefield.setBounds(400, 250, 150, 30);
-        telefield.setFont(new Font("consolas", Font.PLAIN, 20));
+        telefield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(telefield);
 
         teletextfield = new JTextField();
@@ -89,7 +89,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel eMailfield = new JLabel("E-Mail");
         eMailfield.setForeground(Color.WHITE);
         eMailfield.setBounds(50, 300, 150, 30);
-        eMailfield.setFont(new Font("consolas", Font.PLAIN, 20));
+        eMailfield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(eMailfield);
 
         eMailtextfield = new JTextField();
@@ -99,7 +99,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel jobtitlefield = new JLabel("Job Title");
         jobtitlefield.setForeground(Color.WHITE);
         jobtitlefield.setBounds(400, 300, 150, 30);
-        jobtitlefield.setFont(new Font("consolas", Font.PLAIN, 20));
+        jobtitlefield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(jobtitlefield);
 
         String jobtitles[] = {"Production Operative", "Accounting", "Quality Control", "Sales Dept.", "Purchasing", "Industrial Engineer", "Logistics", "HR", "Training/Safety",
@@ -112,7 +112,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel locationfield = new JLabel("Location");
         locationfield.setBounds(50, 400, 150, 30);
         locationfield.setForeground(Color.WHITE);
-        locationfield.setFont(new Font("consolas", Font.PLAIN, 20));
+        locationfield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(locationfield);
 
         String locations[] = {"Birmingham", "Stourbridge"};
@@ -124,7 +124,7 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel NIfield = new JLabel("NI No.");
         NIfield.setBounds(400, 400, 150, 30);
         NIfield.setForeground(Color.WHITE);
-        NIfield.setFont(new Font("consolas", Font.PLAIN, 20));
+        NIfield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(NIfield);
 
         NItextfield = new JTextField();
@@ -134,13 +134,13 @@ public class AddEmployee extends JFrame implements ActionListener {
         JLabel empIDfield = new JLabel("Employee ID");
         empIDfield.setForeground(Color.WHITE);
         empIDfield.setBounds(50, 450, 150, 30);
-        empIDfield.setFont(new Font("consolas", Font.PLAIN, 20));
+        empIDfield.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(empIDfield);
 
         empIDlabel = new JLabel("" + number);
         empIDlabel.setForeground(Color.WHITE);
         empIDlabel.setBounds(200, 450, 150, 30);
-        empIDlabel.setFont(new Font("consolas", Font.PLAIN, 20));
+        empIDlabel.setFont(new Font("Century Gothic", Font.PLAIN, 20));
         add(empIDlabel);
 
         add = new JButton("Add Details");
